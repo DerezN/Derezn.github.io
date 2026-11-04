@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Desmond Nguyen (derezn) — Crypto Security Research</title>
+<meta name="description" content="Independent security researcher focused on blockchain protocols, smart contracts, and AI-assisted vulnerability discovery.">
+<style>
+  body { font-family: Georgia, 'Times New Roman', serif; margin: 0; color: #1a1a1a; background: #fdfdfa; line-height: 1.6; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 20px 80px; }
+  h1 { font-size: 2rem; margin-bottom: 0.2em; }
+  h2 { font-size: 1.25rem; margin-top: 2.2em; border-bottom: 1px solid #ddd; padding-bottom: 0.3em; }
+  .tagline { color: #444; font-size: 1.05rem; }
+  a { color: #0b5394; }
+  li { margin-bottom: 0.55em; }
+  .note { color: #555; font-size: 0.95rem; }
+  footer { margin-top: 3em; color: #666; font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Desmond Nguyen — derezn</h1>
+  <p class="tagline">Independent security researcher focused on blockchain protocols, smart contracts, and AI-assisted vulnerability discovery.</p>
+  <p>BS in Artificial Intelligence, Carroll University (class of 2029, GPA 3.90). I build open-source
+  security tooling, reproduce historical vulnerabilities in local labs, and compete in public audit
+  competitions. Everything on this page links to work you can check — code, tests, or a public platform profile.</p>
+
+  <h2>Research interests</h2>
+  <ul>
+    <li>Inherited vulnerabilities in forked / cloned crypto codebases</li>
+    <li>Smart-contract accounting and invariant failures (ERC-4626, token supply, bridges)</li>
+    <li>AI-assisted triage with human-verified findings — hypotheses stay labeled as hypotheses until tested</li>
+    <li>Local, reproducible security labs (Foundry, property / invariant testing)</li>
+  </ul>
+
+  <h2>Open-source projects</h2>
+  <ul>
+    <li><a href="https://github.com/DerezN/crypto-fork-analyzer">crypto-fork-analyzer</a> — identifies inherited code between crypto repos and flags known security patches a fork may be missing. Python, tested.</li>
+    <li><a href="https://github.com/DerezN/smart-contract-security-lab">smart-contract-security-lab</a> — Foundry lab of historical vulnerability classes. Exercise 01 (ERC-4626 first-depositor inflation): attack reproduced against the vulnerable vault, blocked by the fixed vault, <code>forge test</code> 2/2 passing.</li>
+    <li><a href="https://github.com/DerezN/ai-security-framework">ai-security-framework</a> — local-first pipeline: repo ingestion → code indexing → structured hypotheses → evidence-gated, human-verified findings.</li>
+  </ul>
+
+  <h2>Case studies</h2>
+  <ul>
+    <li>Case Study 01 — ERC-4626 first-depositor / share-inflation attack (historical reproduction, not an original discovery). Lab complete and verified; write-up in final review.</li>
+  </ul>
+
+  <h2>Platform profiles</h2>
+  <ul>
+    <li>GitHub: <a href="https://github.com/DerezN">github.com/DerezN</a></li>
+    <li>CodeHawks / Cyfrin: <a href="https://profiles.cyfrin.io/u/derezn">profiles.cyfrin.io/u/derezn</a></li>
+    <li>HackerOne: <a href="https://hackerone.com/derezn">hackerone.com/derezn</a></li>
+    <li>Bugcrowd, Cantina, Immunefi: derezn / DerezN (profiles on request)</li>
+  </ul>
+
+  <h2>Contact</h2>
+  <p>Research inquiries: <a href="mailto:desmond.v.nguyen@gmail.com">desmond.v.nguyen@gmail.com</a> ·
+  LinkedIn: <a href="https://www.linkedin.com/in/desmond-nguyen-537532281/">desmond-nguyen-537532281</a></p>
+  <p class="note">No paid audit services are offered yet. Competition results and accepted findings
+  will be listed here only when they are publicly verifiable.</p>
+
+  <footer>© 2026 Desmond Nguyen. Built with plain HTML — no trackers, no frameworks.</footer>
+</main>
+</body>
+</html>
