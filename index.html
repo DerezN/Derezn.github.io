@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Desmond Nguyen (derezn) — Crypto Security Research</title>
-<meta name="description" content="Independent security researcher focused on blockchain protocols, smart contracts, and AI-assisted vulnerability discovery.">
+<meta name="description" content="I look for security bugs in blockchain and smart contract code, and I use AI tools to help me do it.">
 <style>
   body { font-family: Georgia, 'Times New Roman', serif; margin: 0; color: #1a1a1a; background: #fdfdfa; line-height: 1.6; }
   main { max-width: 720px; margin: 0 auto; padding: 48px 20px 80px; }
@@ -20,54 +20,53 @@
 <body>
 <main>
   <h1>Desmond Nguyen — derezn</h1>
-  <p class="tagline">Independent security researcher focused on blockchain protocols, smart contracts, and AI-assisted vulnerability discovery.</p>
-  <p>BS in Artificial Intelligence, Carroll University (class of 2029, GPA 3.90). I build open-source
-  security tooling, reproduce historical vulnerabilities in local labs, and compete in public audit
-  competitions. Everything on this page links to work you can check — code, tests, or a public platform profile.</p>
+  <p class="tagline">I look for security bugs in blockchain and smart contract code, and I use AI tools to help me do it.</p>
+  <p>I'm a sophomore at Carroll University in Wisconsin, studying Artificial Intelligence (class of 2029, GPA 3.90).
+  I build small tools, rebuild old bugs in a lab so I can learn how they work, and enter public audit competitions.
+  Everything on this page is stuff you can check — code, tests, or a profile on another site.</p>
 
-  <h2>Research interests</h2>
+  <h2>What I spend my time on</h2>
   <ul>
-    <li>Inherited vulnerabilities in forked / cloned crypto codebases</li>
-    <li>Smart-contract accounting and invariant failures (ERC-4626, token supply, bridges)</li>
-    <li>AI-assisted triage with human-verified findings — hypotheses stay labeled as hypotheses until tested</li>
-    <li>Local, reproducible security labs (Foundry, property / invariant testing)</li>
+    <li>Crypto projects that copy each other's code — and the bugs that get copied along with it</li>
+    <li>Smart contract mistakes in things like accounting and token math (ERC-4626 vaults are the one I've studied most)</li>
+    <li>Using AI to help find places a bug might be hiding, then checking every idea by hand before I believe it</li>
+    <li>Small test labs I can run over and over to show a bug is real</li>
   </ul>
 
-  <h2>Open-source projects</h2>
+  <h2>My projects</h2>
   <ul>
-    <li><a href="https://github.com/DerezN/crypto-fork-analyzer">crypto-fork-analyzer</a> — identifies inherited code between crypto repos and flags known security patches a fork may be missing. Python, tested.</li>
-    <li><a href="https://github.com/DerezN/smart-contract-security-lab">smart-contract-security-lab</a> — Foundry lab of historical vulnerability classes. Exercise 01 (ERC-4626 first-depositor inflation): attack reproduced against the vulnerable vault, blocked by the fixed vault, <code>forge test</code> 2/2 passing.</li>
-    <li><a href="https://github.com/DerezN/ai-security-framework">ai-security-framework</a> — local-first pipeline: repo ingestion → code indexing → structured hypotheses → evidence-gated, human-verified findings.</li>
+    <li><a href="https://github.com/DerezN/crypto-fork-analyzer">crypto-fork-analyzer</a> — compares crypto projects that copied each other's code and points out security fixes the copy might have missed. Written in Python, with tests.</li>
+    <li><a href="https://github.com/DerezN/smart-contract-security-lab">smart-contract-security-lab</a> — a practice lab. I rebuild old, known smart contract bugs, then write the fixed version and test both. The first one (an ERC-4626 vault bug) is done and the tests pass.</li>
+    <li><a href="https://github.com/DerezN/ai-security-framework">ai-security-framework</a> — a tool I'm building that runs on my own computer. It reads a codebase and helps me come up with places to look for bugs. I still check everything myself before I call it a finding.</li>
   </ul>
 
-  <h2>AI &amp; software projects</h2>
-  <p>From my Artificial Intelligence degree work and personal builds. Code for these three is being prepared for publication on GitHub; the descriptions below match the work as built.</p>
+  <h2>Other projects</h2>
+  <p>Stuff from my AI degree and projects I built on my own. I'm still cleaning up the code for these three before I post it.</p>
   <ul>
-    <li><strong>Pokémon Card Scanner</strong> — computer-vision pipeline in Python: identifies a trading card from a photo, looks up its data via API, and writes structured results to Excel. Built for messy real-world inputs — glare, angles, sleeves, worn cards — with uncertain matches flagged instead of passed along as confident answers.</li>
-    <li><strong>Fleetway</strong> — route-optimization device built with Python on a Raspberry Pi with a touchscreen UI, designed around the constraints of running on physical hardware.</li>
-    <li><strong>Local AI Workflow Toolkit</strong> — local-first toolkit in Python using Ollama to run models on my own hardware instead of cloud APIs, built to learn where local models are good enough — and where they aren't.</li>
+    <li><strong>Pokémon Card Scanner</strong> — point a camera at a Pokémon card and it works out which card it is, then puts the card's info into a spreadsheet. Real cards are messy — glare, weird angles, plastic sleeves — so I made it say "not sure" instead of guessing wrong.</li>
+    <li><strong>Fleetway</strong> — a route planner I built on a Raspberry Pi with a little touchscreen. The first thing I ever built for real hardware instead of just a screen.</li>
+    <li><strong>Local AI Workflow Toolkit</strong> — I set up AI models (Ollama) to run on my own computer instead of the cloud, mostly to learn what they're good at and what they're bad at.</li>
   </ul>
 
-  <h2>Case studies</h2>
+  <h2>Write-ups</h2>
   <ul>
-    <li>Case Study 01 — ERC-4626 first-depositor / share-inflation attack (historical reproduction, not an original discovery). Lab complete and verified; write-up in final review.</li>
+    <li>Case Study 01 — I rebuilt a known attack on ERC-4626 vaults (the "first depositor" one) in my lab to learn how it works. It's an old, public bug, not one I found. My write-up is almost done.</li>
   </ul>
 
-  <h2>Platform profiles</h2>
+  <h2>Me on other sites</h2>
   <ul>
     <li>GitHub: <a href="https://github.com/DerezN">github.com/DerezN</a></li>
     <li>CodeHawks / Cyfrin: <a href="https://profiles.cyfrin.io/u/derezn">profiles.cyfrin.io/u/derezn</a></li>
     <li>HackerOne: <a href="https://hackerone.com/derezn">hackerone.com/derezn</a></li>
-    <li>Bugcrowd, Cantina, Immunefi: derezn / DerezN (profiles on request)</li>
+    <li>Bugcrowd, Cantina, Immunefi: derezn / DerezN (ask me if you want those profiles)</li>
   </ul>
 
   <h2>Contact</h2>
-  <p>Research inquiries: <a href="mailto:desmond.v.nguyen@gmail.com">desmond.v.nguyen@gmail.com</a> ·
+  <p>Email: <a href="mailto:desmond.v.nguyen@gmail.com">desmond.v.nguyen@gmail.com</a> ·
   LinkedIn: <a href="https://www.linkedin.com/in/desmond-nguyen-537532281/">desmond-nguyen-537532281</a></p>
-  <p class="note">No paid audit services are offered yet. Competition results and accepted findings
-  will be listed here only when they are publicly verifiable.</p>
+  <p class="note">I don't do paid audits yet. I'll only post results here when there's a public record anyone can check.</p>
 
-  <footer>© 2026 Desmond Nguyen. Built with plain HTML — no trackers, no frameworks.</footer>
+  <footer>© 2026 Desmond Nguyen. I wrote this page by hand in plain HTML.</footer>
 </main>
 </body>
 </html>
